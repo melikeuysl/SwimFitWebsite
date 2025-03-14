@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>SwimFit Academy</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+
+
+<body>
+  <img style="width: 100%; height:70%;  " src="images/kurs.jpg" alt="not found">
+  
+
+<div id="container">
+
+    <a href="index.html"><!-- anasyafaya yonlendiren baslık. -->
+        <div id="header">
+            <h1><i class="fa-solid fa-person-swimming"></i>    Welcome To SwimFit Academy    <i class="fa-solid fa-person-swimming"></i></h1>
+          </div>
+
+    </a>
+  
+
+
+  <div id="wrapper">
+    
+    <div id="content">
+
+        <h1><i class="fa-solid fa-address-card"></i>  Swimming Course Registration & Contact Form</h1>
+
+    <form action="#" method="post">
+        <label for="name">Full Name:</label> <!-- label and textbox -->
+        <input  type="text" id="name" name="name" required placeholder="Your Name And Surname" size="95px" ><br><br><hr>
+
+        
+        <label for="email">Email:</label><!-- label and textbox -->
+        <input type="email" id="email" name="email" required  placeholder="Your email address"size="95px"><br><br><hr>
+
+        
+        <label>Gender:</label><br><!-- radiobutton for gender -->
+        
+      Female <input type="radio" name="cinsiyetRadio " checked="true "> <!--  name lerini aynı yaparak aynı anad ikisinin seçilmesini engelledik, chexcked başlangıçt adefaoult olarak seçili gelmesini sağlar  -->
+
+      Male <input type="radio" name="cinsiyetRadio "> <hr><br>
+        
+        <label for="style">Preferred Swimming Style:</label><!-- dropbox for styles   -->
+        <select id="style" name="style"  >
+            <option value="freestyle">Freestyle</option>
+            <option value="backstroke">Backstroke</option>
+            <option value="breaststroke">Breaststroke</option>
+            <option value="butterfly">Butterfly</option>
+            <option value="All Option ">All Option</option>
+        </select><br><br>
+
+       
+        <label for="message">Your Message:</label><br> <!-- textarea for messages -->
+        <textarea id="message" name="message" rows="10" cols="40"></textarea><br><br>
+
+        <input type="checkbox" id="agree" name="agree" required>I agree to the terms and conditions. <br><br><hr><!-- chechbox for condition,projet requirtment -->
+
+      
+        
+
+       
+        <button type="submit">Register</button><!-- button for registering -->
+    
+
+
+        <button type="reset">Clean</button><!-- button for  clean all fields  -->
+       
+
+        <button onclick="showMessage()">Click Me</button><!--  button for simple javascript message -->
+
+
+    <script>
+        function showMessage() {
+            alert("Hi everyone from JavaScript");
+        }
+    </script>
+        
+        
+
+
+        
+    </form>
+
+
+    
+        <h1><i class="fa-solid fa-location-dot"></i>   Our Location</h1>
+
+        <div class="map-container"> <!-- map for location  -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.1886102200438!2d34.97254807620772!3d40.55951197141698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40872a9a1f047655%3A0x301741e635bcd55!2sOlimpik%20Y%C3%BCzme%20Havuzu!5e0!3m2!1str!2str!4v1741823320123!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h2><i><b>Tel no:+123456789</b></i></h2><!-- information for comminication   -->
+        <h2><i><b>Email : SwimFitAcademy@gmail.com</b></i></h2>
+
+    
+
+      
+    </div>
+  </div>
+
+  
+  <div id="navigation">
+    
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+      <li><a href="freestyle.html"><i class="fa-solid fa-person-swimming"></i>Free Style</a></li>
+      <li><a href="backstroke.html"><i class="fa-solid fa-person-swimming"></i>Backstroke Style</a></li>
+      <li><a href="breaststroke.html"><i class="fa-solid fa-person-swimming"></i>Breaststroke Style</a></li>
+      <li><a href="butterfly.html"><i class="fa-solid fa-person-swimming"></i>Butterfly Style</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-address-card"></i>Contact & Register</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+  
+
+  <div id="footer">
+    <p>&copy; 2025 SwimFit Academy</p>
+  </div>
+</div>
+</body>
+</html>
